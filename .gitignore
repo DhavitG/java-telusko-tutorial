@@ -1,0 +1,47 @@
+# Compiled class files
+*.class
+
+# Java binary files
+*.jar
+*.war
+*.ear
+
+# VS Code settings and workspace files
+.vscode/
+
+# Gradle build files
+.gradle/
+build/
+
+# Maven build files
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Log files
+*.log
+
+# IDE-specific files (if switching to another IDE later)
+.idea/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+
+# Temporary and system files
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Test coverage and debugging
+coverage/
+test-output/
+hs_err_pid*
+replay_pid*
