@@ -1,16 +1,9 @@
 public class Hello {
-  private static String greeting = "Hello";
-
-  public static void greetUser(String name) {
-      System.out.println(greeting + ", " + name + "!");
-  }
-
   public static void main(String[] args) {
-      if (args.length > 0) {
-          greetUser(args[0]);
-      } else {
-          System.out.println("Hello, World!");
-          System.out.println("Tip: Run again with your name as an argument :)");
-      }
+    int num1 = 3;
+    int num2 = 45;
+    int result = num1 + num2;
+    System.out.println(result);
+      
   }
 }
