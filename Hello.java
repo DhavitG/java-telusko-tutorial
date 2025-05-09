@@ -1,9 +1,18 @@
 public class Hello {
+  // public static void main(String[] args) {
+  //   // byte b = 127;
+  //   int a = 257;
+  //   byte k = (byte)a;
+  //   System.out.println(k);
+      
+  // }
+
   public static void main(String[] args) {
-    int num1 = 3;
-    int num2 = 45;
-    int result = num1 + num2;
-    System.out.println(result);
+    int num = 7;
+    num += 2;
+    num++;
+
+    System.out.println(num);
       
   }
 }
