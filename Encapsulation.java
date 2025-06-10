@@ -2,6 +2,7 @@ class Human {
   // private int age = 13;
   // private String name = "Dhavit";
 
+  // binding data with methods
   private int age;
   private String name;
 
