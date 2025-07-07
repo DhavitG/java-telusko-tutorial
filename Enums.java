@@ -9,7 +9,7 @@ public class Enums {
     Status s = Status.Running;
     System.out.println(s);
     System.out.println(s.ordinal()); //gives back index (like arrays)
-
+ 
     switch (s) {
       case Running:
         System.out.println("All good");
