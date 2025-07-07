@@ -1,9 +1,12 @@
 interface Computer{
-  void code();
+  int age = 21; // by default public static final (variables)
+  void code(); // by default public abstract
 }
 
 class Laptop implements Computer {
+  // you dont get to change the variable values here
   public void code() {
+    System.out.println(age);
     System.out.println("code, compile, run");
   }
 }
@@ -26,6 +29,6 @@ public class Interface {
     Computer iMac = new Desktop();
 
     Developer dhavit = new Developer();
-    dhavit.devApp(iMac);
+    dhavit.devApp(macbook);
   }
 }
