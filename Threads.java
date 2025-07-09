@@ -1,4 +1,5 @@
-class A extends Thread{ // its not an ordinary class now ; its a thread
+// class A extends Thread{ // its not an ordinary class now ; its a thread
+class A implements Runnable {
   public void run() {
     for(int i = 0; i<10; i++) {
       System.out.println("high");
@@ -11,7 +12,7 @@ class A extends Thread{ // its not an ordinary class now ; its a thread
   }
 }
 
-class B extends Thread{
+class B implements Runnable{
   public void run() {
     for(int i = 0; i<10; i++) {
       System.out.println("low");
@@ -26,10 +27,15 @@ class B extends Thread{
 
 public class Threads {
   public static void main(String a[]) {
-    A obj1 = new A();
-    B obj2 = new B();
+    Runnable obj1 = new A(); 
+    Runnable obj2 = new B();
 
-    obj1.start();
-    obj2.start();
+    // obj1 becomes a runnable object
+    // one of the thread class constructors takes runnable object as parameter
+    Thread t1 = new Thread(obj1);
+    Thread t2 = new Thread(obj2);
+
+    t1.start();
+    t2.start();
   }
 }
